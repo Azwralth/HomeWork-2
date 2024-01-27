@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,29 +13,31 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="istockphoto-1297630168-612x612" translatesAutoresizingMaskIntoConstraints="NO" id="UFx-RJ-GcX">
-                                <rect key="frame" x="16" y="20" width="343" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traffic light" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jm7-5M-EKt">
-                                <rect key="frame" x="89" y="509" width="197" height="62.5"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="48"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I9c-2L-RuZ">
+                                <rect key="frame" x="16" y="80" width="398" height="674.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="istockphoto-1297630168-612x612" translatesAutoresizingMaskIntoConstraints="NO" id="UFx-RJ-GcX">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="612"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traffic light" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jm7-5M-EKt">
+                                        <rect key="frame" x="56.666666666666657" y="612" width="284.66666666666674" height="62.666666666666629"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="48"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UFx-RJ-GcX" secondAttribute="trailing" constant="16" id="HiR-28-g8i"/>
-                            <constraint firstItem="UFx-RJ-GcX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Lm4-Yh-ciB"/>
-                            <constraint firstItem="Jm7-5M-EKt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="3:3.5" id="MQc-Nm-oiF"/>
-                            <constraint firstItem="Jm7-5M-EKt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="aWR-Wg-dfH"/>
-                            <constraint firstItem="UFx-RJ-GcX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="d6h-PJ-uTn"/>
-                            <constraint firstItem="UFx-RJ-GcX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="n1b-io-3no"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jm7-5M-EKt" secondAttribute="trailing" constant="89" id="yed-V5-wXS"/>
+                            <constraint firstAttribute="trailing" secondItem="I9c-2L-RuZ" secondAttribute="trailing" constant="16" id="5gg-0s-6iF"/>
+                            <constraint firstItem="I9c-2L-RuZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="JVm-Ij-4VN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I9c-2L-RuZ" secondAttribute="bottom" constant="143.33000000000001" id="Pcg-yQ-2t6"/>
+                            <constraint firstItem="I9c-2L-RuZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="16" id="PpH-qL-HZ3"/>
                         </constraints>
                     </view>
                 </viewController>

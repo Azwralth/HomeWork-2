@@ -17,30 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUl-6s-1Pb">
-                                <rect key="frame" x="140" y="269" width="150" height="150"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="I7W-wL-e2x">
+                                <rect key="frame" x="140" y="174.66666666666663" width="150" height="538"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTL-yw-6rH">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUl-6s-1Pb">
+                                        <rect key="frame" x="0.0" y="194" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAm-fv-3xP">
+                                        <rect key="frame" x="0.0" y="388" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="aRP-ty-DnK"/>
+                                    <constraint firstAttribute="height" constant="538" id="AVp-vd-9dw"/>
+                                    <constraint firstAttribute="width" constant="150" id="cIe-oD-0SF"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTL-yw-6rH">
-                                <rect key="frame" x="140" y="75" width="150" height="150"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="lz9-Sc-Xxy"/>
-                                    <constraint firstAttribute="width" constant="150" id="zHb-Jv-jU9"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAm-fv-3xP">
-                                <rect key="frame" x="140" y="463" width="150" height="150"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="tOi-Uk-iC4"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzK-lf-cSt">
-                                <rect key="frame" x="144" y="699" width="142" height="46"/>
+                                <rect key="frame" x="144" y="836" width="142" height="46"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
@@ -54,19 +53,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TUl-6s-1Pb" firstAttribute="height" secondItem="xTL-yw-6rH" secondAttribute="height" id="0Rg-jh-LfG"/>
-                            <constraint firstItem="jzK-lf-cSt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="2rj-jf-bNJ"/>
-                            <constraint firstItem="xTL-yw-6rH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4Sk-Ez-Oxm"/>
-                            <constraint firstItem="TUl-6s-1Pb" firstAttribute="top" secondItem="xTL-yw-6rH" secondAttribute="bottom" constant="44" id="ETn-Ml-CzE"/>
-                            <constraint firstItem="gAm-fv-3xP" firstAttribute="top" secondItem="TUl-6s-1Pb" secondAttribute="bottom" constant="44" id="LYl-KY-H2d"/>
-                            <constraint firstItem="TUl-6s-1Pb" firstAttribute="centerX" secondItem="xTL-yw-6rH" secondAttribute="centerX" id="RuF-8Q-H6n"/>
-                            <constraint firstItem="jzK-lf-cSt" firstAttribute="top" secondItem="gAm-fv-3xP" secondAttribute="bottom" constant="86" id="cFb-88-YDh"/>
-                            <constraint firstItem="gAm-fv-3xP" firstAttribute="leading" secondItem="TUl-6s-1Pb" secondAttribute="leading" id="fzz-vR-Vdw"/>
-                            <constraint firstItem="xTL-yw-6rH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="mPN-5p-4Sa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jzK-lf-cSt" secondAttribute="trailing" constant="144" id="pqt-tD-dIh"/>
-                            <constraint firstItem="gAm-fv-3xP" firstAttribute="height" secondItem="xTL-yw-6rH" secondAttribute="height" id="r5r-5T-NlA"/>
-                            <constraint firstItem="TUl-6s-1Pb" firstAttribute="width" secondItem="xTL-yw-6rH" secondAttribute="width" id="uOP-zp-d53"/>
-                            <constraint firstItem="gAm-fv-3xP" firstAttribute="width" secondItem="xTL-yw-6rH" secondAttribute="width" id="uTC-oa-vUi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jzK-lf-cSt" secondAttribute="trailing" constant="144" id="Cqa-To-VD6"/>
+                            <constraint firstItem="I7W-wL-e2x" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-35" id="MyQ-2L-BAx"/>
+                            <constraint firstItem="I7W-wL-e2x" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mlQ-rK-wRe"/>
+                            <constraint firstItem="jzK-lf-cSt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="pTT-pi-8bi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jzK-lf-cSt" secondAttribute="bottom" constant="16" id="yLr-gh-mSm"/>
                         </constraints>
                     </view>
                     <connections>
